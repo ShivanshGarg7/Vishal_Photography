@@ -1,29 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --white: #ddd;
   --dark: #111;
-  --darkGrey: #474b4f;
+  --Black: #474b4f;
   --lightGrey: #6b6e70;
-  --lightGreen: #86c232;
-  --darkGreen: #61892f;
+  --Black: #000000;
   --transition: all 0.5s ease;
+  --header-font: "Merriweather", serif;
+  --max-width: 1200px;
+  --text-dark: #171717;
+  --text-light: #525252;
+  --extra-light: #a3a3a3;
 }
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 body {
-  line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
 }
 
 img {
   width: 100%;
-  display: block;
+  display: flex;
 }
 
 ul li {
@@ -45,6 +54,8 @@ p {
   margin: 15px 0;
 }
 
+
+
 .flex {
   display: flex;
   justify-content: center;
@@ -56,29 +67,53 @@ p {
   margin: 0 auto;
 }
 .btn {
-  background: var(--darkGreen);
+  background: var(--Black);
   border: none;
   display: block;
   width: 150px;
   text-align: center;
-  color: var(--darkGreen);
+  color: var(--Black);
   text-transform: uppercase;
   background: transparent;
   font-size: 15px;
   padding: 12px;
-  border: 3px solid var(--darkGreen);
+  border: 3px solid var(--Black);
+  border-radius: 25px;
+  margin: 15px 0;
+  transition: var(--transition);
+}
+
+.btn1 {
+  background: var(--white);
+  border: none;
+  display: block;
+  width: 150px;
+  text-align: center;
+  color: var(--Black);
+  text-transform: uppercase;
+  /* background: transparent; */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px;
+  border: 3px solid var(--Black);
   border-radius: 25px;
   margin: 15px 0;
   transition: var(--transition);
 }
 
 .btn:hover {
-  background: var(--darkGreen);
-  color: #fff;
+  background: var(--Black);
+  color: #ffffff;
+}
+
+
+.btn1:hover {
+  background: var(--Black);
+  color: #ffffff;
 }
 
 .active {
-  color: var(--lightGreen) !important;
+  color: var(--Black) !important;
 }
 
 .header {
@@ -90,38 +125,39 @@ p {
 }
 
 .top-nav a {
-  color: #fff;
+  color: #000000;
 }
 
-.brand-nav-btn {
-  background-color: #000;
+
+.container-nav-section {
+  background-color: #ffffff;
   position: relative;
   z-index: 999;
-  height: 90px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   padding: 15px 25px;
-  color: var(--white);
+  color: var(--Black);
 }
 
 .brand-name {
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   cursor: pointer;
 }
 
 .navBtn {
   width: 40px;
   height: 40px;
-  border: 1px solid var(--white);
+  border: 1px solid var(--Black);
   cursor: pointer;
 }
 
 .navBtn:hover {
-  background: #fff;
-  color: #000;
+  background: #000000;
+  color: #ffffff;
   transform: var(--transition);
 }
 
@@ -154,7 +190,7 @@ p {
 .top-nav ul a::after {
   content: "";
   height: 2px;
-  background: var(--lightGreen);
+  background: var(--Black);
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -189,7 +225,7 @@ p {
   font-size: 48px;
   text-align: center;
   margin-bottom: 35px;
-  color: var(--lightGreen);
+  color: var(--Black);
 }
 
 .about-content h3 {
@@ -214,7 +250,7 @@ blockquote {
 blockquote span {
   font-size: 14px;
   text-transform: uppercase;
-  color: var(--darkGreen);
+  color: var(--Black);
   font-weight: 300;
   letter-spacing: 5px;
   display: block;
@@ -246,8 +282,8 @@ blockquote span {
 }
 
 .social-icons ul a:hover {
-  background: var(--lightGreen);
-  border-color: var(--lightGreen);
+  background: var(--Black);
+  border-color: var(--Black);
 }
 
 .section-one {
@@ -257,7 +293,7 @@ blockquote span {
 
 .sec-one-left {
   height: 100vh;
-  background: url("https://images.pexels.com/photos/22185/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+  background: url("./10.jpeg")
     center/cover no-repeat;
   box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
@@ -308,15 +344,14 @@ blockquote span {
 
 .work-img1 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
-    url("./img.jpg") center/cover no-repeat;
+    url("./04.jpeg") center/cover no-repeat;
   height: 400px;
-  /* width: 450px; */
   transition: var(--transition);
 }
 
 .work-img2 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
-    url("./img.jpg") center/cover no-repeat;
+    url("./22.jpg") center/cover no-repeat;
   height: 400px;
   /* width: 450px; */
   transition: var(--transition);
@@ -336,20 +371,11 @@ blockquote span {
 }
 
 .section-two span {
-  color: var(--darkGrey);
+  color: var(--Black);
   text-align: center;
   display: block;
   font-size: 20px;
   margin-bottom: 30px;
-}
-
-.insta-imgs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.insta-imgs > div {
-  position: relative;
 }
 
 .icon-overlay {
@@ -365,10 +391,6 @@ blockquote span {
   transition: var(--transition);
 }
 
-.insta-imgs > div:hover .icon-overlay {
-  opacity: 1;
-}
-
 .footer {
   background: var(--dark);
   color: #fff;
@@ -381,7 +403,7 @@ blockquote span {
 }
 
 .footer-container h2 {
-  color: var(--lightGreen);
+  color: var(--Black);
   font-size: 36px;
   font-weight: 500;
   letter-spacing: 7px;
@@ -421,7 +443,7 @@ blockquote span {
   font-size: 16px;
   padding: 15px 0;
   font-weight: bold;
-  background: var(--lightGreen);
+  background: var(--Black);
   border: none;
   transition: var(--transition);
   cursor: pointer;
@@ -667,7 +689,7 @@ blockquote span {
 }
 
 .badge{
-  background: var(--lightGreen);
+  background: var(--Black);
   width: 140px;
   border-radius: 5px;
   padding: 5px 0;
@@ -749,11 +771,140 @@ blockquote span {
   font-size: 16px;
   padding: 10px 15px;
   margin: 10px 0;
-  border: 1px solid var(--lightGreen);
+  border: 1px solid var(--Black);
   outline: none;
   border-radius: 5px;
 }
 
 .contact-bottom .form{
   padding: 0 20px;
+}
+
+
+.instagram__container {
+  padding: 20px;
+  padding-top: 80px;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.scroll-wrapper{
+  overflow: hidden;
+  position: relative;
+}
+
+.section__header{
+  font-size: 2em;
+  margin-bottom: 20px;
+  position:relative;
+}
+
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.instagram__flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: scroll 20s linear infinite;
+  cursor: grab;
+}
+
+
+.instagram__flex img {
+  max-width: 135px;
+}
+
+
+
+@keyframes scroll {
+  to{
+     transform: translateX(calc(-50% - 0.75rem)); 
+  }
+}
+
+.footer__container {
+  display: grid;
+  gap: 4rem 0;
+  align-items: center;
+}
+
+.footer__col {
+  padding-inline: 2rem;
+}
+
+.footer__container img {
+  max-width: 120px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__socials a {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.footer__socials a:hover {
+  color: var(--text-light);
+}
+
+.footer__links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.footer__links a {
+  display: block;
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+}
+
+.footer__links a:hover {
+  color: var(--Black);
+}
+
+.footer__col h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+}
+
+.footer__col p {
+  columns: var(--white);
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--extra-light);
+  background-color: var(--text-dark);
+  text-align: center;
 }
