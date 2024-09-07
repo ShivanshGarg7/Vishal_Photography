@@ -13,63 +13,31 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container-nav-section">
-        <div class="brand-nav-btn">
-          <span class="brand-name">Vishal Photography</span>
-        </div>
-
-        <!-- navigation menu -->
-        <nav class="top-nav">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-
-      </div>
-
-      <div class="container about">
-        <div class="about-content">
-          <div class="about-img flex">
-            <img
-              src="./logo.jpg"
-            />
+    <header class="header" id="home">
+      <nav>
+          <div class="nav__header">
+              <div class="nav__logo">
+                  <a href="#"><img src="logo.jpg" alt="logo" width="60%"></a>
+              </div>
+              <div class="nav__menu__btn" id="menu-btn">
+                  <i class="ri-menu-line"></i>
+              </div>
           </div>
-          <h2>Vishal Photography</h2>
-          <h3>Wedding Photography</h3>
-          <blockquote>
-            "Photography is a way of feeling, of touching, of loving.What you
-            have caught on film is captured forever... It remembers little
-            things, long after you have forgotten everything."
-          </blockquote>
-        </div>
-
-        <div class="social-icons">
-          <ul>
-            <li>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-            </li>
-
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-
-            <li>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </li>
-
-            <li>
-              <a href="#"><i class="fab fa-pinterest"></i></a>
-            </li>
+          <ul class="nav__links" id="nav-links">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="index.html#about">ABOUT US</a></li>
+              <li class="nav__logo">
+                  <a href="index.html">
+                      <img src="logo.jpg" alt="Logo" width="50%">
+                  </a>
+              </li>
+              <li><a href="service.html">SERVICES</a></li>
+              <li><a href="index.html#package">PACKAGES</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
           </ul>
-        </div>
-      </div>
-    </header>
-    <!-- ---------main--------- -->
-
+      </nav>
+  </header>
     <section class="section-three">
       <div class="container">
         <div class="gallery">
@@ -141,44 +109,31 @@
       </div>
     </section>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="footer-container ">
-        <div>
-          <h2>Vishal Photography</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
-            consequuntur libero repudiandae totam repellendus at porro! Hic
-            temporibus autem consequatur libero ex saepe alias quasi distinctio
-            doloribus ad. Illo ipsa sint error iusto labore tenetur doloremque
-            necessitatibus quae, veritatis dicta.
-          </p>
-        </div>
 
-        <div>
-          <h3>Free Subscription!</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            laboriosam labore maiores ipsa dolor neque dolore, dignissimos
-            reiciendis ex dolores vero consectetur rerum. Et culpa consequatur
-            cumque rerum architecto iure quam minus nam eum! Nemo sapiente iusto
-            modi ratione repellat.</p>
+  </div>
+  <div class="footer__bar">
+    <div class="footer__col">
+      <ul class="footer__links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#client">CLIENT</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+      </ul>
+  </div>
+  <div class="footer__col">
+      <h4>CAPTURE YOUR MOMENTS</h4>
+      <p>Make your Precious Wedding Memorable With Us!</p>
+  </div>
+      Copyright @ 2024 Vishal Photography. All rights reserved.
+  </div>
 
-            <div class="subs">
-                <i class="fas-fa-envelope"></i>
-                <input type="email" id="email" placeholder="Email Address">
-                <button type="submit">SUBSCRIBE</button>
-            </div>
-        </div>
-      </div>
+</footer>
 
-      <p>&copy; Copyright Vishal Photography</p>
-    </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+</body>
 
-    <!-- LIGHTBOX -->
-
-    <script src="photography-site-simplelightbox-master/dist/simple-lightbox.js"></script>
-
-    <script src="script.js"></script>
-  </body>
 </html>

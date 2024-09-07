@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vishal Photography</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script
@@ -13,61 +14,50 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container-nav-section">
-        <div class="brand-nav-btn">
-          <span class="brand-name">Vishal Photography</span>
-        </div>
-
-        <!-- navigation menu -->
-        <nav class="top-nav">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-
-      </div>
-
-      <div class="container about">
-        <div class="about-content">
-          <div class="about-img flex">
-            <img
-              src="./logo.jpg"
-            />
+    <header class="header" id="home">
+      <nav>
+          <div class="nav__header">
+              <div class="nav__logo">
+                  <a href="#"><img src="logo.jpg" alt="logo" width="60%"></a>
+              </div>
+              <div class="nav__menu__btn" id="menu-btn">
+                  <i class="ri-menu-line"></i>
+              </div>
           </div>
-          <h2>Vishal Photography</h2>
-          <h3>Wedding Photography</h3>
-          <blockquote>
-            "Photography is a way of feeling, of touching, of loving.What you
-            have caught on film is captured forever... It remembers little
-            things, long after you have forgotten everything."
-          </blockquote>
-        </div>
-
-        <div class="social-icons">
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/vishalsinghrathour7k?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
-            </li>
-
-            <li>
-              <a href="#" id = "whatsAppLink"><i class="fab fa-whatsapp"></i></a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/vishalphotograaphy?igsh=MXdiejhkdnNlNXBsNw=="><i class="fab fa-instagram"></i></a>
-            </li>
-
-            <li>
-              <a href="https://youtube.com/@vishalphotography2656?si=WAZLFBKPEEZs8br5"><i class="fab fa-youtube"></i></a>
-            </li>
+          <ul class="nav__links" id="nav-links">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="index.html#about">ABOUT US</a></li>
+              <li class="nav__logo">
+                  <a href="index.html">
+                      <img src="logo.jpg" alt="Logo" width="50%">
+                  </a>
+              </li>
+              <li><a href="service.html">SERVICES</a></li>
+              <li><a href="#package">PACKAGES</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
           </ul>
+      </nav>
+  </header>
+      <div class="container-about" id="about">
+        <div class="about-content">
+          <h2> <b>VISHAL PHOTOGRAPHY</b> <hr></h2>
+          <h3>CAPTURE YOUR PRECIOUS MOMENTS WITH US...</h3>
+          <p class="section_description">
+            At Vishal Photography, we pride ourselves on creating a personalized photography experience that is tailored to your unique vision. We understand that every couple has a different story to tell, and we work closely with you to capture moments that resonate with your individuality and style. Our team combines technical precision with creative artistry, ensuring that each photograph is not only visually stunning but also full of depth and emotion.
+          </p>
+          <p class="section_description">
+            We believe that weddings are more than just events; they are a collection of moments, emotions, and memories that deserve to be preserved with care. From the laughter shared with friends to the intimate glances between loved ones, we strive to capture the essence of your special day. At Vishal Photography, we are dedicated to creating images that not only celebrate your love but also tell the authentic story of your journey together. Our passion is to craft timeless memories that you will treasure for a lifetime.           
+          </p>
+
+          <center>
+            <img
+            src="./gallleryy.jpeg"
+          />
+          </center>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <!-- ---------main--------- -->
 
@@ -78,9 +68,7 @@
           <div>
             <h3>Explore Gallery</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              asperiores repellendus explicabo ipsum eius? Itaque accusamus
-              corporis velit ea quos?
+              Explore our Gallery to witness the Moments we've beautifully captured, showcasing the love, joy, and emotions of Unforgettable Weddings. Let our work Inspire your own Story!
             </p>
             <a href="gallery.html" class="btn1">View all</a>
           </div>
@@ -90,13 +78,9 @@
           <div class="work-content">
             <h3>AMAZING TEAM WORK WITH PROFESSIONAL PHOTOGRAPHER</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-              officiis voluptatum itaque nisi obcaecati dicta nulla, architecto
-              autem a unde? Vitae officia nulla voluptates necessitatibus vero
-              placeat adipisci doloribus quidem illum! Itaque quisquam natus
-              iste laborum unde, consequatur quis ipsa.
+              Our Team of Skilled Professionals Works Together seamlessly to capture every moment with precision and creativity. Combining expertise with a passion for storytelling, we ensure your wedding day is beautifully documented, reflecting the essence of your unique celebration.
             </p>
-            <a href="gallery.html" class="btn">View all</a>
+            <a href="gallery.html" class="btn1">View all</a>
           </div>
 
           <div class="work-imgs">
@@ -117,7 +101,49 @@
       </div>
     </section>
 
-
+    <section class="package" id="package">
+      <div class="section__container package__container">
+          <h1 class="section__header">~ PACKAGES ~</h1>
+          <p class="section__description">At Vishal Photography, we offer a range of professional photography packages.</p>
+          <div class="service__grid">
+              <div class="package__card">
+                  <div>
+                      <h4 style="text-align: center;">Standard Package</h4>
+                      <p><strong>Wedding:</strong> 1 Photographer, 1 Videographer, 1 Cinematographer, 1 Candid Photographer</p>
+                      <p><strong>Engagement, Haldi & Rituals:</strong> 1 Photographer, 1 Videographer</p>
+                      <p><strong>Album & Video:</strong> 50-sheet album (~300 images), 45-60 min detailed video, 3-4 Min teaser, 1 invitation video, 1 invitation card</p>
+                      <p><strong>Coverage:</strong> For one side (Bride or Groom)</p>
+                      <button class="btn">Know More</button>
+                  </div>
+                
+              </div>
+              <div class="package__card">
+                  <div>
+                      <h4 style="text-align: center;">Premium Package</h4>
+                      <p><strong>Wedding:</strong> 1 photographer, 1 videographer, 1 cinematographer, 1 candid photographer</p>
+                      <p><strong>Engagement</strong> 1 photographer, 1 videographer, 1 candid photographer</p>
+                      <p><strong>Haldi & Rituals:</strong> 1 photographer, 1 videographer</p>
+                      <p><strong>Pre-Wedding:</strong> 1-day photo & video session</p>
+                      <p><strong>Album & Video:</strong> Two 50-sheet albums (~300 images each), 45-60 min detailed video, 3-4 min teaser, 3-4 min pre-wedding cinematic video, 1 couple frame, 1 family frame, 1 invitation video, 1 invitation card</p>
+                      <p><strong>Coverage:</strong> For both sides (Bride and Groom)</p>
+                      <button class="btn">Know More</button>
+                  </div>
+                  
+              </div>
+              <div class="package__card">
+                  <div>
+                      <h4 style="text-align: center;">Platinum Package</h4>
+                      <p><strong>Engagement & Wedding:</strong> 1 photographer, 1 videographer, 1 cinematographer, 1 candid photographer, 1 drone</p>
+                      <p><strong>Haldi & Rituals:</strong> 1 photographer, 1 videographer, 1 cinematographer, 1 candid photographer</p>
+                      <p><strong>Pre-Wedding:</strong> 2-day photo & video session</p>
+                      <p><strong>Album & Video:</strong> Two 80-sheet albums (~450 images each), 45-60 min detailed video, 3-4 min teaser, 3-4 min pre-wedding cinematic video, 1 couple frame, 1 family frame, 1 invitation card video, 1 invitation card</p>
+                      <p><strong>Coverage:</strong> For both sides (Bride and Groom)</p>
+                  </div>
+                  <button class="btn">Know More</button>
+              </div>
+          </div>
+      </div>
+  </section>
     <section class="section__container instagram__container">
       <h2 class="section__header">~ INSTAGRAM ~</h2>
       <div class="scroll-wrapper">
@@ -141,16 +167,15 @@
       <div class="footer__bar">
         <div class="footer__col">
           <ul class="footer__links">
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#services">SERVICES</a></li>
-              <li><a href="#client">CLIENT</a></li>
-              <li><a href="#blog">BLOG</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="blog.html">SERVICES</a></li>
+              <li><a href="blog.html">PACKAGES</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
           </ul>
       </div>
       <div class="footer__col">
-          <h4>CAPTURE YOUR MOMENTS</h4>
+          <h4>CAPTURE YOUR PRECIOUS MOMENTS WITH US..</h4>
           <p>Make your Precious Wedding Memorable With Us!</p>
       </div>
           Copyright @ 2024 Vishal Photography. All rights reserved.
@@ -160,7 +185,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="index.js"></script>
+  <script src="connection.js"></script>
+  <script src="script.js"></script>
+  <script>
+    
+  </script>
 </body>
 
 </html>

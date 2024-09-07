@@ -1,20 +1,24 @@
-const showBtn  = document.querySelector('.navBtn');
-const topNav = document.querySelector('.top-nav');
 
-showBtn.addEventListener('click', function(){
-    if(topNav.classList.contains('showNav')){
-        topNav.classList.remove('showNav');
-        showBtn.innerHTML = '<i class = "fas fa-bars"></i>'
-    }
-    else{
-        topNav.classList.add('showNav');
-        showBtn.innerHTML = '<i class = "fas fa-bars"></i>';
-    }
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const menuBtnIcon = menuBtn.querySelector("i");
+
+
+menuBtn.addEventListener("click", (e) => {
+    navLinks.classList.toggle("open");
+
+    const isOpen = navLinks.classList.contains("open");
+    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+
+});
+
+navLinks.addEventListener("click", (e) => {
+    navLinks.classList.remove("open");
+    menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
 /* Lightbox */
 var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
-
 
 
 
@@ -42,7 +46,7 @@ var insta_swiper = new Swiper(".mySwiper", {
 
 
 const scrollWrapper = document.querySelector('.scroll-wrapper');
-const instagramFlex = document.querySelector('.instagram__flex');
+// const instagramFlex = document.querySelector('.instagram__flex');
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -114,11 +118,3 @@ document.addEventListener('DOMContentLoaded', function() {
         whatsApp();
     });
 });
-
-
-function whatsApp() {
-    var message = "Hello, I would like to know more about your Package.";
-    var url = "https://api.whatsapp.com/send?phone=8400636660&text=" + encodeURIComponent(message);
-    window.open(url, '_blank');
-}
-
