@@ -33,8 +33,8 @@
                       <img src="logo.jpg" alt="Logo" width="50%">
                   </a>
               </li>
-              <li><a href="service.html">SERVICES</a></li>
-              <li><a href="#package">PACKAGES</a></li>
+              <li><a href="index.html#service">SERVICES</a></li>
+              <li><a href="index.html#package">PACKAGES</a></li>
               <li><a href="contact.html">CONTACT US</a></li>
           </ul>
       </nav>
@@ -58,6 +58,31 @@
         </div>
       </div>
     </header> -->
+
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+          <h1 class="section__header">~ SERVICES ~</h1>
+          <p class="section__description">At The Wedding Festival, we offer a range of professional photography services.</p>
+          <div class="service__grid">
+              <div class="service__card">
+                  <h4> Weddings Sessions </h4>
+                  <p>At The Wedding Festival, we believe that your wedding day is a beautiful celebration of love and commitment. Our wedding photography captures every precious moment, from the heartfelt vows to the joyous celebrations, with a blend of artistry and emotion. We focus on the genuine interactions and candid moments that make your day unique, creating a visual story that you'll cherish forever.
+
+                  </p>
+              </div>
+              <div class="service__card">
+                  <h4>Pre-Weddings Sessions</h4>
+                  <p>Pre-wedding photography is all about capturing the excitement and anticipation leading up to your big day. At The Wedding Festival, we work closely with couples to create personalized photo sessions that reflect your relationship's unique character. Whether it's a romantic beach setting or an urban adventure, we aim to showcase your love story in a way that is both beautiful and meaningful.
+                  </p>
+              </div>
+              <div class="service__card">
+                  <h4>Portraits Sessions</h4>
+                  <p>Portraits are a timeless way to capture the essence of individuals and couples. At The Wedding Festival, we specialize in creating stunning portraits that highlight your personality and style. Whether you're looking for elegant bridal portraits, couple sessions, or individual shots, our goal is to make you feel comfortable and confident, resulting in images that are not only beautiful but also true to who you are..</p>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <!-- ---------main--------- -->
 
@@ -113,7 +138,7 @@
                       <p><strong>Engagement, Haldi & Rituals:</strong> 1 Photographer, 1 Videographer</p>
                       <p><strong>Album & Video:</strong> 50-sheet album (~300 images), 45-60 min detailed video, 3-4 Min teaser, 1 invitation video, 1 invitation card</p>
                       <p><strong>Coverage:</strong> For one side (Bride or Groom)</p>
-                      <button class="btn">Know More</button>
+                      <button class="btn" onclick="WhatsAppChatstandard()">Know More</button>
                   </div>
                 
               </div>
@@ -126,7 +151,7 @@
                       <p><strong>Pre-Wedding:</strong> 1-day photo & video session</p>
                       <p><strong>Album & Video:</strong> Two 50-sheet albums (~300 images each), 45-60 min detailed video, 3-4 min teaser, 3-4 min pre-wedding cinematic video, 1 couple frame, 1 family frame, 1 invitation video, 1 invitation card</p>
                       <p><strong>Coverage:</strong> For both sides (Bride and Groom)</p>
-                      <button class="btn">Know More</button>
+                      <button class="btn" onclick="WhatsAppChatpremium()">Know More</button>
                   </div>
                   
               </div>
@@ -138,8 +163,8 @@
                       <p><strong>Pre-Wedding:</strong> 2-day photo & video session</p>
                       <p><strong>Album & Video:</strong> Two 80-sheet albums (~450 images each), 45-60 min detailed video, 3-4 min teaser, 3-4 min pre-wedding cinematic video, 1 couple frame, 1 family frame, 1 invitation card video, 1 invitation card</p>
                       <p><strong>Coverage:</strong> For both sides (Bride and Groom)</p>
+                      <button class="btn" onclick="WhatsAppChatplatinum()">Know More</button>
                   </div>
-                  <button class="btn">Know More</button>
               </div>
           </div>
       </div>
@@ -153,12 +178,12 @@
               <div class="item"><img src="IMG_8037.JPG" alt="instagram"></div>
               <div class="item"><img src="IMG_9279.JPG" alt="instagram"></div>
               <div class="item"><img src="07.jpeg" alt="instagram"></div> 
+              <div class="item"><img src="07.jpeg" alt="instagram"></div> 
+              <div class="item"><img src="07.jpeg" alt="instagram"></div> 
               <div class="item"><img src="12.jpeg" alt="instagram"></div>
               <div class="item"><img src="IMG_8624.JPG" alt="instagram"></div>
               <div class="item"><img src="FOT_4588.jpg" alt="instagram"></div>
               <div class="item"><img src="FOT_4803.jpg" alt="instagram"></div>
-
-
           </div>
       </div>
   </section>
@@ -169,8 +194,9 @@
           <ul class="footer__links">
               <li><a href="index.html">HOME</a></li>
               <li><a href="gallery.html">GALLERY</a></li>
-              <li><a href="blog.html">SERVICES</a></li>
-              <li><a href="blog.html">PACKAGES</a></li>
+              <li><a href="index.html#about">ABOUT US</a></li>
+              <li><a href="index.html#services">SERVICES</a></li>
+              <li><a href="index.html#packages">PACKAGES</a></li>
               <li><a href="contact.html">CONTACT</a></li>
           </ul>
       </div>
@@ -185,10 +211,101 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="connection.js"></script>
   <script src="script.js"></script>
   <script>
-    
+
+function WhatsAppChatstandard() {
+    var message = "Hello, I would like to know more about your Standard Package.";
+    var url = "https://api.whatsapp.com/send?phone=+918400636660&text=" + encodeURIComponent(message);
+    window.open(url, '_blank');
+}
+
+
+function WhatsAppChatpremium() {
+    var message = "Hello, I would like to know more about your Premium Package.";
+    var url = "https://api.whatsapp.com/send?phone=+918400636660&text=" + encodeURIComponent(message);
+    window.open(url, '_blank');
+}
+
+
+
+function WhatsAppChatplatinum() {
+    var message = "Hello, I would like to know more about your Platinum Package.";
+    var url = "https://api.whatsapp.com/send?phone=+918400636660&text=" + encodeURIComponent(message);
+    window.open(url, '_blank');
+}
+
+
+
+const scrollWrapper = document.querySelector('.scroll-wrapper');
+const instagramFlex = document.querySelector('.instagram__flex');
+let isDown = false;
+let startX;
+let scrollLeft;
+let lastMoveX;
+let velocity = 0;
+let momentumID;
+
+// Handle mouse and touch start (mousedown/touchstart)
+function startInteraction(e) {
+    isDown = true;
+    instagramFlex.style.cursor = 'grabbing';
+    const pageX = e.pageX || e.touches[0].pageX; // Get the X coordinate (mouse or touch)
+    startX = pageX - scrollWrapper.offsetLeft;
+    scrollLeft = scrollWrapper.scrollLeft;
+    lastMoveX = pageX;
+    velocity = 0; // Reset velocity on new drag
+    instagramFlex.style.animationPlayState = 'paused'; // Pause any CSS animation
+    clearInterval(momentumID); // Stop any previous momentum effect
+}
+
+// Handle mouse and touch end (mouseup/touchend)
+function endInteraction() {
+    if (isDown) {
+        applyMomentum(); // Apply momentum when the user releases
+    }
+    isDown = false;
+    instagramFlex.style.cursor = 'grab'; // Change cursor back
+}
+
+// Handle mouse and touch move (mousemove/touchmove)
+function moveInteraction(e) {
+    if (!isDown) return;
+    e.preventDefault();  // Prevent default scrolling on mobile
+    const pageX = e.pageX || e.touches[0].pageX; // Get the X coordinate (mouse or touch)
+    const x = pageX - scrollWrapper.offsetLeft;
+    const walk = (x - startX) * 2; // Control scroll speed (increase/decrease if needed)
+    scrollWrapper.scrollLeft = scrollLeft - walk;
+    velocity = (pageX - lastMoveX) * 0.5; // Calculate velocity
+    lastMoveX = pageX; // Update lastMoveX for momentum calculation
+}
+
+// Add mouse event listeners
+scrollWrapper.addEventListener('mousedown', startInteraction);
+scrollWrapper.addEventListener('mouseup', endInteraction);
+scrollWrapper.addEventListener('mouseleave', endInteraction); // In case the user drags outside the container
+scrollWrapper.addEventListener('mousemove', moveInteraction);
+
+// Add touch event listeners
+scrollWrapper.addEventListener('touchstart', startInteraction, { passive: true });
+scrollWrapper.addEventListener('touchend', endInteraction);
+scrollWrapper.addEventListener('touchmove', moveInteraction, { passive: false }); // Prevent default scrolling
+
+// Apply momentum after dragging
+function applyMomentum() {
+    clearInterval(momentumID); // Clear any previous momentum intervals
+    momentumID = setInterval(() => {
+        scrollWrapper.scrollLeft -= velocity; // Continue scrolling based on velocity
+        velocity *= 0.95; // Apply friction to velocity, gradually slowing it down
+        if (Math.abs(velocity) < 0.1) { // Stop when the velocity is very low
+            clearInterval(momentumID);
+            instagramFlex.style.animationPlayState = 'running'; // Resume animation
+        }
+    }, 16); // Approximately 60 FPS
+}
+
+
+
   </script>
 </body>
 
