@@ -30,7 +30,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-img {
+.img {
   width: 100%;
   display: flex;
 }
@@ -291,13 +291,6 @@ p {
   align-items: center;
 }
 
-.instagram__container {
-  padding: 20px;
-  padding-top: 80px;
-  text-align: center;
-  max-width: 1200px;
-}
-
 .scroll-wrapper{
   overflow: hidden;
   position: relative;
@@ -307,25 +300,6 @@ p {
   font-size: 2em;
   margin-bottom: 20px;
   position:relative;
-}
-
-.instagram__flex {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  animation: scroll 20s linear infinite;
-  cursor: grab;
-}
-
-
-.instagram__flex img {
-  max-width: 135px;
-}
-
-@keyframes scroll {
-    to{
-       transform: translateX(calc(-50% - 0.75rem)); 
-    }
 }
 
 
@@ -364,8 +338,6 @@ p {
   text-align: center;
 
 }
-
-
 .service {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
   url("./22.jpg");
@@ -377,8 +349,6 @@ p {
 .service__container .section__header {
   color: white;
 }
-
-
 
 .service__container .section__description {
   max-width: 600px;
@@ -450,12 +420,14 @@ p {
 
 .sec-one-left div h3 {
   font-size: 28px;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .sec-one-left div p {
   font-weight: 300;
-  opacity: 0.8;
+  opacity: 1;
+  color: var(--white);
+  font-weight: bolder;
 }
 
 .sec-one-right h3 {
@@ -634,7 +606,34 @@ p {
   gap: 2rem;
 }
 
+.instagram__flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: scroll 20s linear infinite;
+  cursor: grab;
+}
 
+
+.instagram__container {
+  padding: 20px;
+  padding-top: 80px;
+  text-align: center;
+  max-width: 1200px;
+}
+
+
+.instagram__flex img {
+  max-width: 135px;
+}
+
+
+
+@keyframes scroll {
+  to{
+     transform: translateX(calc(-50% - 0.75rem)); 
+  }
+}
 
 
 
@@ -1082,12 +1081,6 @@ textarea.input {
   }
 }
 
-
-
-
-
-
-
 /***************** Media Queries *****************/
 
 @media screen and (min-width: 678px) {
@@ -1100,27 +1093,14 @@ textarea.input {
 }
 
 @media screen and (min-width: 800px) {
-  /* section two */
-  .insta-imgs {
-    grid-template-columns: repeat(4, 1fr);
-  }
 
-  /* section three */
   .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* section four */
-  .blog-wrapper-sm {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-  }
 }
 
 @media screen and (min-width: 992px) {
-
   
 @media (width > 768px) {
   .header {
@@ -1223,9 +1203,6 @@ textarea.input {
     grid-template-columns: repeat(4, 1fr);
   }
 }}
-
-
-
 
 
 
