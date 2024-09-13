@@ -394,6 +394,61 @@ p {
 }
 
 
+.portfolio__grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.portfolio__card {
+  width: 280px;
+  position: relative;
+  isolation: isolate;
+  cursor: pointer;
+}
+
+.portfolio__card::after {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-family: var(--header-font);
+  color: white;
+}
+
+.portfolio__card:nth-child(1)::after {
+  content: "Weddings";
+}
+
+.portfolio__card:nth-child(2)::after {
+  content: "Pre-Weddings";
+}
+
+.portfolio__card:nth-child(3)::after {
+  content: "Commercials";
+}
+
+.portfolio__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.portfolio__card:hover .portfolio__content {
+  opacity: 1;
+}
+
+
 
 .section-one {
   margin: 40px 0;
