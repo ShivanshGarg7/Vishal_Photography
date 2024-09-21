@@ -512,7 +512,7 @@ p {
 
 .work-img1 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
-    url("./04.jpeg") center/cover no-repeat;
+    url("./03.jpeg") center/cover no-repeat;
   height: 400px;
   transition: var(--transition);
 }
